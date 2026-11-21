@@ -2,7 +2,7 @@ terraform {
 
     backend "s3" {
         bucket         = "my-terraform-backend-youtube"  # Replace with your actual S3 bucket name
-        key            = "terrafrm/state.tfstate"  # Path to the state file in S3
+        key            = "terraform/state.tfstate"  # Path to the state file in S3
         region         = "us-west-2"  # Region of the S3 bucket
         dynamodb_table = "terraform-lock"  # Name of the DynamoDB table for state locking
         encrypt        = true  # Encrypt the state file for security
